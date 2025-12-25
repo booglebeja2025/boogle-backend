@@ -57,8 +57,8 @@ const apiLimiter = rateLimit({
 const allowedOrigins = [
   'http://localhost:3000',
   'http://127.0.0.1:3000',
-  'https://boogle-education.com',
-  'https://www.boogle-education.com'
+  'https://boogle-backend-6ahk.onrender.com', // El Backend mte3ek
+  'https://classy-dasik-bdd8a1.netlify.app/'            // ⚠️ Houni 7ott el link mta3 Netlify mte3ek s7i7!
 ];
 
 const corsOptions = {
