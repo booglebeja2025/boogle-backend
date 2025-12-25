@@ -87,6 +87,8 @@ app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 } else {
+  app.use(morgan('combined')); 
+}
   const accessLogStream = fs.createWriteStream(
     path.join(__dirname, 'logs', 'access.log'),
     { flags: 'a' }
